@@ -1,0 +1,8 @@
+<form action="{% url 'products:search' %}"> <!-- products hace referencia al nombre del app_name de url seguido del nombre de la ruta -->
+	<div class="input-group">
+		<input type="text" name="q" value="{{ query }}" class="form-control" placeholder="Buscar">
+		<div class="input-group-append">
+			<input type="submit" name="" value="Buscar" class="btn btn-primary">
+		</div>
+	</div>
+</form>
